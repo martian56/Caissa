@@ -1,0 +1,5 @@
+# A few moves then both sides agree to a draw.
+e2e4
+e7e5
+/draw
+# expected: wR,wN,wB,wQ,wK,wB,wN,wR,wP,wP,wP,wP,,wP,wP,wP,,,,,,,,,,,,,wP,,,,,,,,bP,,,,,,,,,,,,bP,bP,bP,bP,,bP,bP,bP,bR,bN,bB,bQ,bK,bB,bN,bR, 1/2-1/2
