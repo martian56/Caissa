@@ -1,4 +1,6 @@
-# Caissa
+<p align="center">
+  <img src="docs/logo.svg" alt="Caissa" width="540">
+</p>
 
 Text-mode chess in C++ for the OOP2 final. Plays two-human or human-vs-AI.
 
@@ -59,21 +61,6 @@ Every legal-move enumeration (mate detection, stalemate detection,
 engine move generation) goes through one templated helper,
 `Board::for_each_legal_move`. Single source of truth for what "legal"
 means, so I can't accidentally have the engine and the rules disagree.
-
-## Things that bit me
-
-- The first version of the AI hook was an `Engine*` member on `Game`,
-  ifdef'd out for the core build. Didn't work because `game.cpp` is
-  compiled once, not twice. Moving the hook into `main.cpp` instead,
-  guarded by `#ifdef WITH_AI`, fixed it.
-- Promotion + capture in the same move was painful to undo correctly:
-  the captured square equals the destination square, so order matters
-  when restoring (move the pawn back to `from` first, *then* put the
-  captured piece back on `to`).
-- On Windows the chess glyphs render as garbage unless the console code
-  page is UTF-8. `SetConsoleOutputCP(CP_UTF8)` at the top of `main`
-  fixes it without needing the user to run `chcp`.
-
 
 ---
 
