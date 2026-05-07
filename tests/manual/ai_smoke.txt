@@ -1,0 +1,7 @@
+y
+w
+e2e4
+d2d4
+b1c3
+g1f3
+/quit
