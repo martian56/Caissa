@@ -7,3 +7,8 @@ local/
 *.exe
 .vscode/
 .idea/
+
+# Environment variables
+.env
+# Ufazien CLI
+ufazien.py

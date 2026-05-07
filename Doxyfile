@@ -3,7 +3,7 @@
 # Use:  make doc  (or:  doxygen Doxyfile)
 
 PROJECT_NAME           = "Caissa"
-PROJECT_BRIEF          = "Text-mode chess in C++ with an optional AI opponent — OOP2 final project"
+PROJECT_BRIEF          = "Text-mode chess in C++ with an optional AI opponent. OOP2 final project"
 OUTPUT_DIRECTORY       = docs/api
 CREATE_SUBDIRS         = NO
 OUTPUT_LANGUAGE        = English
@@ -32,7 +32,6 @@ JAVADOC_AUTOBRIEF      = YES
 QT_AUTOBRIEF           = YES
 INLINE_INHERITED_MEMB  = YES
 COLLABORATION_GRAPH    = YES
-INHERITANCE_GRAPH      = YES
 HAVE_DOT               = NO        # set to YES if Graphviz is installed for diagrams
 
 SOURCE_BROWSER         = YES
