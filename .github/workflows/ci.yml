@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  pull_request:
+     branches:
+       - main
+jobs:
+  format-check:
+    name: clang-format
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install clang-format
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y clang-format
+
+      - name: Show clang-format version
+        run: clang-format --version
+
+      - name: Verify formatting (make format-check)
+        run: make format-check
+
+  build-and-test:
+    name: build + test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build both binaries
+        run: make all
+
+      - name: Run regression tests
+        run: make test
