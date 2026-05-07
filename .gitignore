@@ -1,0 +1,9 @@
+build/
+bin/
+docs/api/
+local/
+*.o
+*.d
+*.exe
+.vscode/
+.idea/
