@@ -1,0 +1,8 @@
+# En passant: white pawn captures a black pawn that just double-pushed.
+e2e4
+a7a6
+e4e5
+d7d5
+e5d6
+/quit
+# expected: wR,wN,wB,wQ,wK,wB,wN,wR,wP,wP,wP,wP,,wP,wP,wP,,,,,,,,,,,,,,,,,,,,,,,,,bP,,,wP,,,,,,bP,bP,,bP,bP,bP,bP,bR,bN,bB,bQ,bK,bB,bN,bR, ?-?
