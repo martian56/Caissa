@@ -2,6 +2,9 @@
 
 Text-mode chess in C++ for the OOP2 final. Plays two-human or human-vs-AI.
 
+API docs are live at **https://caissa-docs.ufazien.com** (generated from
+the Doxygen comments under `src/`).
+
 
 ## Building
 
@@ -70,3 +73,23 @@ means, so I can't accidentally have the engine and the rules disagree.
 - On Windows the chess glyphs render as garbage unless the console code
   page is UTF-8. `SetConsoleOutputCP(CP_UTF8)` at the top of `main`
   fixes it without needing the user to run `chcp`.
+
+
+---
+
+## Ufazien Deployment
+
+The Doxygen-generated API docs are hosted on Ufazien at
+**https://caissa-docs.ufazien.com**.
+
+### Build and deploy
+
+1. Generate the docs locally:
+```bash
+make doc            # writes HTML into docs/api/
+```
+
+2. Push to Ufazien:
+```bash
+ufazien deploy      # uploads docs/api/
+```

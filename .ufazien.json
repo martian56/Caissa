@@ -1,0 +1,9 @@
+{
+  "website_id": "831d2fde-cc2a-4f90-a7cb-9b38cc5ced5e",
+  "website_name": "Caissa Docs",
+  "subdomain": "caissa-docs",
+  "website_type": "build",
+  "domain": "caissa-docs.ufazien.com",
+  "database_id": null,
+  "build_folder": "docs/api"
+}
