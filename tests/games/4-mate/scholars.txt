@@ -1,9 +1,0 @@
-# Scholar's Mate — classic 4-move checkmate.
-e2e4
-e7e5
-f1c4
-b8c6
-d1h5
-g8f6
-h5f7
-# expected: wR,wN,wB,,wK,,wN,wR,wP,wP,wP,wP,,wP,wP,wP,,,,,,,,,,,wB,,wP,,,,,,,,bP,,,,,,bN,,,bN,,,bP,bP,bP,bP,,wQ,bP,bP,bR,,bB,bQ,bK,bB,,bR, 1-0
