@@ -113,14 +113,13 @@ run-ai: $(CHESS_AI_BIN)
 	$(call EXEC,$(CHESS_AI_BIN))
 
 # --- Test target -----------------------------------------------------------
-# Pipes every tests/games/**/*.txt file into bin/chess and diffs the final
-# stdout line against the `# expected:` line in the file.
-# Requires bash. On Windows, use Git Bash (or just run `make test` from a
-# Git Bash shell). On plain cmd.exe make will surface a "bash not found"
-# error from the OS — install Git for Windows.
+# Runs the course's test-level.sh against bin/chess for all four levels via
+# a small bash wrapper. The wrapper handles all shell logic so this recipe
+# stays a single command — works the same from cmd.exe, PowerShell, Git
+# Bash, and POSIX shells (everywhere `bash` is on PATH).
 .PHONY: test
 test: $(CHESS_BIN)
-	bash tests/run_tests.sh $(CHESS_BIN)
+	bash tests/run_all_levels.sh $(CHESS_BIN)
 
 # --- Format targets --------------------------------------------------------
 # Both targets just invoke clang-format. If it is not on PATH, the shell

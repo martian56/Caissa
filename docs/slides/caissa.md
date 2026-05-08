@@ -193,7 +193,7 @@ make            # both binaries
 make chess      # core only, what graders run
 make chess-ai   # core + AI
 
-make test       # 9 piped games, diff against `# expected:`
+make test       # runs all test files in `tests/data`
 make format     # clang-format
 make doc        # Doxygen → docs/api/
 ```
@@ -204,21 +204,6 @@ Shell detection at the top picks the right `rm` / `mkdir`.
 Builds with `-Wall -Wextra -Wpedantic`, zero warnings.
 
 ---
-
-## Tests
-
-| Level | File | Covers |
-|------:|------|--------|
-| 1 | `smoke1.txt`        | Italian Game opening + `/quit` |
-| 1 | `resign.txt`        | `/resign` → `0-1` |
-| 1 | `draw.txt`          | `/draw` → `1/2-1/2` |
-| 2 | `check_response.txt`| Forced response to check |
-| 3 | `castling.txt`      | `O-O` |
-| 3 | `enpassant.txt`     | En passant |
-| 3 | `promote.txt`       | Capture-promotion to Queen |
-| 4 | `scholars.txt`      | Scholar's Mate, `1-0` |
-| 4 | `stalemate.txt`     | Sam Loyd's 10-move stalemate |
-
 
 ## Demo
 

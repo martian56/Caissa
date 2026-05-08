@@ -1,5 +1,0 @@
-# Two opening moves, then white resigns. Result: 0-1 (black wins).
-e2e4
-e7e5
-/resign
-# expected: wR,wN,wB,wQ,wK,wB,wN,wR,wP,wP,wP,wP,,wP,wP,wP,,,,,,,,,,,,,wP,,,,,,,,bP,,,,,,,,,,,,bP,bP,bP,bP,,bP,bP,bP,bR,bN,bB,bQ,bK,bB,bN,bR, 0-1
