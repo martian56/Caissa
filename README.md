@@ -37,11 +37,8 @@ cat tests/games/4-mate/scholars.txt | ./bin/chess
 make test
 ```
 
-Pipes every game file under `tests/games/` into `bin/chess` and compares
-the last stdout line against the `# expected:` line written inside the
-file. Currently 9 games — base moves, check, castling, en passant,
-promotion, scholar's mate, stalemate, /resign, /draw. Requires bash
-(use Git Bash on Windows).
+Runs the course's `tests/test-level.sh` against `bin/chess` for every
+level (1 → 4). The reference games live under `tests/data/`.
 
 There's also `make format` (clang-format) and `make doc` (Doxygen) if
 you want them.
